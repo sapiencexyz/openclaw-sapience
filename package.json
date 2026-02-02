@@ -1,0 +1,16 @@
+{
+  "name": "sapience",
+  "version": "1.0.0",
+  "description": "Prediction markets on Ethereal. Trade outcomes, provide liquidity, claim winnings.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sapiencexyz/openclaw-sapience"
+  },
+  "keywords": ["openclaw", "skill", "prediction-markets", "ethereal", "sapience"],
+  "license": "MIT",
+  "dependencies": {
+    "ethers": "^6.9.0",
+    "ws": "^8.14.0",
+    "js-yaml": "^4.1.0"
+  }
+}
