@@ -72,6 +72,18 @@ reconnect_delay_ms: 5000     # WS reconnect backoff
 - **Collateral**: WUSDe
 - **Contract**: `0xAcD757322df2A1A0B3283c851380f3cFd4882cB4`
 
+## Publishing
+
+```bash
+# Publish to ClawHub
+clawhub publish . --slug sapience --name "Sapience" --version 1.0.0 --changelog "Initial release"
+
+# Future versions
+clawhub publish . --slug sapience --version 2.0.0 --changelog "Breaking changes..."
+```
+
+Version in `SKILL.md` frontmatter and `package.json` should match.
+
 ## Contributing
 
 PRs welcome. See `CLAUDE.md` for guidelines.
