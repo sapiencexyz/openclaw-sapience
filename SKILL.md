@@ -303,6 +303,23 @@ If taker accepts, on-chain mint happens automatically.
 - `1008` - Policy violation (rate limited, connection limit)
 - `1009` - Message too large
 
+## Troubleshooting
+
+If something isn't working (no markets, API errors, signature failures):
+
+1. **Check for skill updates**:
+```bash
+curl -s https://api.github.com/repos/sapiencexyz/openclaw-sapience/releases/latest | jq -r '.tag_name'
+```
+
+2. **Compare to current version**: Check `version` in SKILL.md frontmatter
+
+3. **If newer version exists**: Fetch updated skill from `https://github.com/sapiencexyz/openclaw-sapience`
+
+4. **Still broken?** Check Discord or open issue on GitHub
+
+Protocol changes (new endpoints, contract migrations, API updates) will be published as new versions.
+
 ## Philosophy
 
 This skill provides **infrastructure**, not strategy. Real money at stake.
