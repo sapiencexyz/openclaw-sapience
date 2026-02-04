@@ -7,7 +7,7 @@ Research markets, form views, execute predictions.
 1. **Claim** - Burn settled positions, collect winnings
 2. **Review** - Check PnL, open exposure, risk limits
 3. **Research** - Polymarket prices, news, sentiment
-4. **Predict** - Build parlay, run auction, accept quote
+4. **Predict** - Build prediction, run auction, accept quote
 
 ## Configuration
 
@@ -27,7 +27,7 @@ research_sources:
   - web_search
   - twitter
 
-# Parlay Building
+# Prediction Building
 min_legs: 2                  # Sapience requires 2+
 max_legs: 5                  # Complexity limit
 prefer_uncorrelated: true    # Diversify legs
@@ -75,7 +75,7 @@ Only proceed if:
 - Conviction ≥ `min_conviction`
 - Edge ≥ `min_edge_vs_market`
 
-### 4. Build Parlay
+### 4. Build Prediction
 
 Combine 2+ uncorrelated legs:
 - Each leg needs positive expected value
@@ -112,9 +112,9 @@ ws.send(JSON.stringify({
 ## Edge Calculation
 
 ```
-parlay_fair_odds = leg1_prob * leg2_prob * ... * legN_prob
-parlay_market_odds = leg1_market * leg2_market * ... * legN_market
-edge = parlay_fair_odds - parlay_market_odds
+prediction_fair_odds = leg1_prob * leg2_prob * ... * legN_prob
+prediction_market_odds = leg1_market * leg2_market * ... * legN_market
+edge = prediction_fair_odds - prediction_market_odds
 ```
 
 Example:
@@ -124,7 +124,7 @@ Example:
 
 ## Position Sizing
 
-Kelly fraction for parlays:
+Kelly fraction for predictions:
 ```
 kelly = edge / (odds - 1)
 bet = bankroll * kelly * kelly_fraction

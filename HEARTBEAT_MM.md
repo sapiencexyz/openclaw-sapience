@@ -151,7 +151,7 @@ Listener needs pricing function. Implement in `lib/mm-listener.js`:
 ```javascript
 function calculateQuote(auction, config) {
   // 1. Fetch Polymarket prices for each leg
-  // 2. Calculate parlay fair value
+  // 2. Calculate prediction fair value
   // 3. Apply edge requirement
   // 4. Check risk limits
   // 5. Return quote or null to skip

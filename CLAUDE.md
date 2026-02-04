@@ -10,4 +10,4 @@ When modifying files in this repo:
 
 4. **No slop** - No unnecessary comments or over-explanation. Match existing voice.
 
-5. **Parlay-only** - Sapience only supports parlays (multi-outcome combos). No single-market predictions.
+5. **Multi-leg only** - Sapience requires 2+ legs per prediction. No single-market bets.

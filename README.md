@@ -1,6 +1,6 @@
 # Sapience Skill
 
-Prediction markets on Ethereal. Trade parlays, provide liquidity, claim winnings.
+Prediction markets on Ethereal. Trade predictions, provide liquidity, claim winnings.
 
 ## Installation
 
@@ -19,7 +19,7 @@ https://github.com/sapiencexyz/openclaw-sapience
 | File | Purpose |
 |------|---------|
 | `SKILL.md` | Protocol reference - GraphQL, WebSocket, signing, contracts |
-| `HEARTBEAT_PREDICT.md` | Taker flow - research markets, build parlays, execute predictions |
+| `HEARTBEAT_PREDICT.md` | Taker flow - research markets, build predictions, execute |
 | `HEARTBEAT_MM.md` | Maker flow - manage liquidity listener, adjust strategy |
 | `lib/mm-listener.js` | Reference market maker script (background process) |
 
